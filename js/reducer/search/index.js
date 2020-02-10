@@ -1,7 +1,7 @@
 import Types from '../../action/types';
 
 const defaultState = {
-  showText: '搜索',
+  showText: 'Search',
   items: [],
   isLoading: false,
   projectModels: [], //要显示的数据
@@ -17,7 +17,7 @@ export default function onAction(state = defaultState, action) {
         isLoading: true,
         hideLoadingMore: true,
         showBottomButton: false,
-        showText: '取消',
+        showText: 'Cancel',
       };
     case Types.SEARCH_REFRESH_SUCCESS: //获取数据成功
       return {
@@ -28,20 +28,20 @@ export default function onAction(state = defaultState, action) {
         items: action.items,
         projectModels: action.projectModels,
         pageIndex: action.pageIndex,
-        showText: '搜索',
+        showText: 'Search',
         inputKey: action.inputKey,
       };
     case Types.SEARCH_FAIL: //下拉刷新失败
       return {
         ...state,
         isLoading: false,
-        showText: '搜索',
+        showText: 'Search',
       };
     case Types.SEARCH_CANCEL: //搜索取消
       return {
         ...state,
         isLoading: false,
-        showText: '搜索',
+        showText: 'Search',
       };
     case Types.SEARCH_LOAD_MORE_SUCCESS: //上拉加载更多成功
       return {

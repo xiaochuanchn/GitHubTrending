@@ -57,7 +57,7 @@ class SearchPage extends Component<Props> {
         search.items,
         this.favoriteDao,
         callback => {
-          this.toast.show('没有更多了');
+          this.toast.show('No More');
         },
       );
     } else {
@@ -120,7 +120,7 @@ class SearchPage extends Component<Props> {
     return search.hideLoadingMore ? null : (
       <View style={styles.indicatorContainer}>
         <ActivityIndicator style={styles.indicator} />
-        <Text>正在加载更多</Text>
+        <Text>Loading....</Text>
       </View>
     );
   }
@@ -132,7 +132,7 @@ class SearchPage extends Component<Props> {
     const {keys} = this.props;
     let key = this.inputKey;
     if (Utils.checkKeyIsExist(keys, key)) {
-      this.toast.show(key + '已经存在');
+      this.toast.show(key + 'Already Exist');
     } else {
       key = {
         path: key,
@@ -141,14 +141,14 @@ class SearchPage extends Component<Props> {
       };
       keys.unshift(key); //将key添加到数组的开头
       this.languageDao.save(keys);
-      this.toast.show(key.name + '保存成功');
+      this.toast.show(key.name + 'Save Successful');
       this.isKeyChange = true;
     }
   }
 
   onRightButtonClick() {
     const {onSearchCancel, search} = this.props;
-    if (search.showText === '搜索') {
+    if (search.showText === 'Search') {
       this.loadData();
     } else {
       onSearchCancel(this.searchToken);
@@ -158,7 +158,7 @@ class SearchPage extends Component<Props> {
   renderNavBar() {
     const {theme} = this.params;
     const {showText, inputKey} = this.props.search;
-    const placeholder = inputKey || '请输入';
+    const placeholder = inputKey || 'Input';
     let backButton = ViewUtil.getLeftBackButton(() => this.onBackPress());
     let inputView = (
       <TextInput
@@ -254,7 +254,7 @@ class SearchPage extends Component<Props> {
           this.saveKey();
         }}>
         <View style={{justifyContent: 'center'}}>
-          <Text style={styles.title}>保存到主页面</Text>
+          <Text style={styles.title}>Save</Text>
         </View>
       </TouchableOpacity>
     ) : null;

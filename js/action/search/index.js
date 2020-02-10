@@ -45,9 +45,9 @@ export function onSearch(
         ) {
           dispatch({
             type: Types.SEARCH_FAIL,
-            message: `没找到关于${inputKey}的项目`,
+            message: `Can't Find ${inputKey} Project`,
           });
-          doCallBack(callBack, `没找到关于${inputKey}的项目`);
+          doCallBack(callBack, `Can't Find ${inputKey} Project`);
           return;
         }
         let items = responseData.items;

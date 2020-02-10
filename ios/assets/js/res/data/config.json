@@ -1,7 +1,7 @@
 {
   "aboutMe": {
     "Contact": {
-      "name": "联系方式",
+      "name": "Contact",
       "icon": "ios-contacts",
       "items": {
         "QQ": {
@@ -22,14 +22,14 @@
   },
   "author": {
     "name": "Alan",
-    "description": "专注于移动开发，前端开发。",
+    "description": "Focus on mobile development, front-end development.",
     // "avatar": "http://avatar.csdn.net/1/1/E/1_fengyuzhengfan.jpg",
     // "backgroundImg": "http://www.devio.org/io/GitHubPopular/img/for_githubpopular_about_me.jpg",
     // "url": "http://www.devio.org/"
   },
   "app": {
     "name": "Trending For GitHub",
-    "description": "这是一个用来查看GitHub最受欢迎与最热项目的App,它基于React Native支持Android和iOS双平台。",
+    "description": "This is an app for viewing GitHub's most popular and trending projects. It supports Android and IOS dual platforms based on react native",
     // "avatar": "http://www.devio.org/io/GitHubPopular/img/ic_app.png",
     // "backgroundImg": ""
   }

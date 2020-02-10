@@ -204,12 +204,12 @@ class TrendingTab extends Component {
   footer() {
     return this._store().hideLoadingMore ? (
       <View style={styles.footerContainer}>
-        <Text style={styles.footText}>--------- 我是有底线的 ---------</Text>
+        <Text style={styles.footText}>----------- No More Data -----------</Text>
       </View>
     ) : (
       <View style={styles.footerContainer}>
         <ActivityIndicator />
-        <Text style={styles.footText}>正在加载更多....</Text>
+        <Text style={styles.footText}>Loading....</Text>
       </View>
     );
   }
