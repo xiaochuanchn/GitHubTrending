@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Trending For GitHub</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">tK7Pbvx13mC450buJbGxY1IQvvb6dQfQcOPRq</string>
+</resources>

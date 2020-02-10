@@ -1,0 +1,36 @@
+{
+  "aboutMe": {
+    "Contact": {
+      "name": "联系方式",
+      "icon": "ios-contacts",
+      "items": {
+        "QQ": {
+          "title": "QQ",
+          "account": "5335505"
+        },
+        "Email": {
+          "title": "Email",
+          "account": "xiaochuanchn@gmail.com"
+        }
+      }
+    },
+  },
+  "info": {
+    "html_url": "https://github.com/xiaochuanchn/",
+    // "url": "https://api.github.com/repos/crazycodeboy/",
+    // "currentRepoUrl": "https://api.github.com/repos/crazycodeboy/GitHubPopular"
+  },
+  "author": {
+    "name": "Alan",
+    "description": "专注于移动开发，前端开发。",
+    // "avatar": "http://avatar.csdn.net/1/1/E/1_fengyuzhengfan.jpg",
+    // "backgroundImg": "http://www.devio.org/io/GitHubPopular/img/for_githubpopular_about_me.jpg",
+    // "url": "http://www.devio.org/"
+  },
+  "app": {
+    "name": "Trending For GitHub",
+    "description": "这是一个用来查看GitHub最受欢迎与最热项目的App,它基于React Native支持Android和iOS双平台。",
+    // "avatar": "http://www.devio.org/io/GitHubPopular/img/ic_app.png",
+    // "backgroundImg": ""
+  }
+}
