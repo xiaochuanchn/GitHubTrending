@@ -95,7 +95,7 @@ class MyPage extends Component<Props> {
     };
     let navigationBar = (
       <NavigationBar
-        title={'我的'}
+        title={'My'}
         statusBar={statusBar}
         style={{backgroundColor: theme.themeColor}}
       />

@@ -22,7 +22,7 @@ const TABS = {
   TrendingPage: {
     screen: TrendingPage,
     navigationOptions: {
-      tabBarLabel: '趋势',
+      tabBarLabel: 'Trending',
       tabBarIcon: ({tintColor, focused}) => {
         return <Icon name="call-made" size={26} color={tintColor} />;
       },
@@ -31,7 +31,7 @@ const TABS = {
   PopularPage: {
     screen: PopularPage,
     navigationOptions: {
-      tabBarLabel: '最热',
+      tabBarLabel: 'Popular',
       tabBarIcon: ({tintColor, focused}) => {
         return <Icon name="star" size={26} color={tintColor} />;
       },
@@ -41,7 +41,7 @@ const TABS = {
   FavoritePage: {
     screen: FavoritePage,
     navigationOptions: {
-      tabBarLabel: '收藏',
+      tabBarLabel: 'Favorite',
       tabBarIcon: ({tintColor, focused}) => {
         return <Icon name="favorite" size={26} color={tintColor} />;
       },
@@ -50,7 +50,7 @@ const TABS = {
   MyPage: {
     screen: MyPage,
     navigationOptions: {
-      tabBarLabel: '我的',
+      tabBarLabel: 'My',
       tabBarIcon: ({tintColor, focused}) => {
         return <Icon name="person" size={26} color={tintColor} />;
       },

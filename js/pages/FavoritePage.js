@@ -33,7 +33,7 @@ class FavoritePage extends Component {
     };
     let navigationBar = (
       <NavigationBar
-        title={'收藏'}
+        title={'Favorite'}
         statusBar={statusBar}
         style={{backgroundColor: theme.themeColor}}
       />
@@ -50,7 +50,7 @@ class FavoritePage extends Component {
               />
             ), //初始化Component时携带默认参数 @https://github.com/react-navigation/react-navigation/issues/2392
             navigationOptions: {
-              title: '最热',
+              title: 'Popular',
             },
           },
           Trending: {
@@ -62,7 +62,7 @@ class FavoritePage extends Component {
               />
             ), //初始化Component时携带默认参数 @https://github.com/react-navigation/react-navigation/issues/2392
             navigationOptions: {
-              title: '趋势',
+              title: 'Trending',
             },
           },
         },

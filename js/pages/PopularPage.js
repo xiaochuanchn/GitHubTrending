@@ -77,7 +77,7 @@ class PopularPage extends Component {
     };
     let navigationBar = (
       <NavigationBar
-        title="最热"
+        title="Popular"
         statusBar={statusBar}
         style={{backgroundColor: theme.themeColor}}
         rightButton={this.renderRightButton()}

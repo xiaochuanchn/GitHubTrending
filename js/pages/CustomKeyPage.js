@@ -142,15 +142,15 @@ class CustomKeyPage extends Component<Props> {
 
   onBack() {
     if (this.changeValues.length > 0) {
-      Alert.alert('提示', '要保存修改吗？', [
+      Alert.alert('Note', 'Are You Sure To Save？', [
         {
-          text: '否',
+          text: 'No',
           onPress: () => {
             NavigatorUtil.goBack(this.props.navigation);
           },
         },
         {
-          text: '是',
+          text: 'Yes',
           onPress: () => {
             this.onSave();
           },
@@ -189,10 +189,10 @@ class CustomKeyPage extends Component<Props> {
 
   render() {
     const {theme} = this.params;
-    let title = this.isRemoveKey ? '标签移除' : '自定义标签';
+    let title = this.isRemoveKey ? 'Remove Language' : 'Custom Language';
     title =
-      this.params.flag === FLAG_LANGUAGE.flag_language ? '自定义语言' : title;
-    let rightButtonTitle = this.isRemoveKey ? '移除' : '保存';
+      this.params.flag === FLAG_LANGUAGE.flag_language ? 'Custom Language' : title;
+    let rightButtonTitle = this.isRemoveKey ? 'Remove' : 'Save';
     let navigationBar = (
       <NavigationBar
         title={title}

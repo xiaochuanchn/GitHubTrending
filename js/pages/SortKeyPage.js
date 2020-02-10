@@ -135,15 +135,15 @@ class SortKeyPage extends Component<Props> {
     if (
       !ArrayUtil.isEqual(SortKeyPage._keys(this.props), this.state.checkedArray)
     ) {
-      Alert.alert('提示', '要保存修改吗？', [
+      Alert.alert('Note', 'Are You Sure To Save？', [
         {
-          text: '否',
+          text: 'NO',
           onPress: () => {
             NavigationUtil.goBack(this.props.navigation);
           },
         },
         {
-          text: '是',
+          text: 'YES',
           onPress: () => {
             this.onSave(true);
           },
@@ -158,14 +158,14 @@ class SortKeyPage extends Component<Props> {
     const {theme} = this.params;
     let title =
       this.params.flag === FLAG_LANGUAGE.flag_language
-        ? '语言排序'
-        : '标签排序';
+        ? 'Sort Language'
+        : 'Sort Language';
     let navigationBar = (
       <NavigationBar
         title={title}
         leftButton={ViewUtil.getLeftBackButton(() => this.onBack())}
         style={{backgroundColor: theme.themeColor}}
-        rightButton={ViewUtil.getRightButton('保存', () => this.onSave())}
+        rightButton={ViewUtil.getRightButton('Save', () => this.onSave())}
       />
     );
     return (
