@@ -97,7 +97,6 @@ class TabNavigator extends Component {
 }
 class TabBarComponent extends Component {
   render() {
-    console.log(this.props);
     console.disableYellowBox = true;
     return <BottomTabBar {...this.props} activeTintColor={this.props.theme} />;
   }

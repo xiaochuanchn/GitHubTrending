@@ -19,7 +19,7 @@ import FavoriteDao from '../expand/FavoriteData';
 import {connect} from 'react-redux';
 import BackPress from '../common/BackPress';
 
-const TRENDING_URL = 'https://github.com';
+// const TRENDING_URL = 'https://github.com';
 class DetailPage extends Component {
   constructor(props) {
     super(props);
@@ -27,9 +27,8 @@ class DetailPage extends Component {
     this.params = this.props.navigation.state.params;
     const {projectModel, flag} = this.params;
     this.favoriteDao = new FavoriteDao(flag);
-    this.url =
-      projectModel.item.html_url || TRENDING_URL + projectModel.item.url;
-    const title = projectModel.item.full_name || projectModel.item.fullName;
+    this.url = projectModel.item.html_url || projectModel.item.url;
+    const title = projectModel.item.full_name || projectModel.item.name;
     this.state = {
       title: title,
       url: this.url,
@@ -42,7 +41,7 @@ class DetailPage extends Component {
   onBackPress() {
     this.onBack();
     return true;
-}
+  }
   componentDidMount() {
     this.backPress.componentDidMount();
   }

@@ -32,9 +32,6 @@ class MyPage extends Component<Props> {
         const {onShowCustomThemeView} = this.props;
         onShowCustomThemeView(true);
         break;
-      // case MORE_MENU.CodePush:
-      //   RouteName = 'CodePushPage';
-      //   break;
       case MORE_MENU.Sort_Key:
         RouteName = 'SortKeyPage';
         params.flag = FLAG_LANGUAGE.flag_key;
@@ -56,6 +53,10 @@ class MyPage extends Component<Props> {
         break;
       case MORE_MENU.About_Author:
         RouteName = 'AboutMePage';
+        break;
+      case MORE_MENU.CodePush:
+        RouteName = 'CodePush';
+        params.title = 'Update';
         break;
       case MORE_MENU.Feedback:
         const url = 'mailto://xiaochuanchn@gmail.com';
@@ -149,6 +150,8 @@ class MyPage extends Component<Props> {
           {/* {this.getItem(MORE_MENU.About_Author)} */}
           {/*反馈*/}
           {this.getItem(MORE_MENU.Feedback)}
+          {/*更新*/}
+          {this.getItem(MORE_MENU.CodePush)}
         </ScrollView>
         <CustomTheme
           visible={customThemeViewVisible}

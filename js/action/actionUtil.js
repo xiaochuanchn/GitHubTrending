@@ -48,7 +48,6 @@ export function handleData(
   let showItems =
     pageSize > fixItems.length ? fixItems : fixItems.slice(0, pageSize);
   _projectModels(showItems, favoriteDao, projectModels => {
-    console.log(projectModels);
     dispatch({
       type: actionType,
       items: fixItems,

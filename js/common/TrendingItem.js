@@ -15,33 +15,29 @@ export default class TrendingItem extends BaseItem {
         <ListItem
           title={
             <View style={styles.titleContainer}>
-              <Text style={styles.title}>{item.fullName}</Text>
+              <Text style={styles.title}>{item.name}</Text>
               {this._favoriteIcon()}
             </View>
           }
           subtitle={
             <View>
-              <HTMLView
-                value={'<p>' + item.description + '</p>'}
-                stylesheet={{p: styles.p}}
-              />
               <Text style={styles.descriptions} numberOfLines={3}>
-                {item.meta}
+                {item.description}
               </Text>
               <View style={styles.starContainer}>
                 <View style={styles.textContainer}>
                   <Ionicons name="md-star" size={14} />
-                  <Text style={styles.text}>{item.starCount}</Text>
+                  <Text style={styles.text}>{item.stars}</Text>
                 </View>
                 <View style={styles.textContainer}>
                   <Ionicons name="md-git-branch" size={14} />
-                  <Text style={styles.text}>{item.forkCount}</Text>
+                  <Text style={styles.text}>{item.forks}</Text>
                 </View>
               </View>
             </View>
           }
           leftAvatar={{
-            source: {uri: item.contributors[0]},
+            source: {uri: item.avatar},
           }}
           bottomDivider
         />

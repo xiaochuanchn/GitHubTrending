@@ -21,13 +21,13 @@ import NavigationUtil from '../navigator/NavigatorUtil';
 import FavoriteUtil from '../util/FavoriteUtil';
 import {FLAG_LANGUAGE} from '../expand/LanguageData';
 const favoriteDao = new FavoriteData(FLAG_STORAGE.flag_trending);
-const URL = 'https://github.com/trending/';
+// const URL = 'https://github.com/trending/';
 const PAGESIZE = 10;
+const URL = 'https://github-trending-api.now.sh/repositories';
 const spanTimes = ['?since=daily', '?since=weekly', '?since=monthly'];
 class TrendingPage extends Component {
   constructor(props) {
     super(props);
-    console.log(NavigationUtil.navigation);
     const {onLoadLanguage} = this.props;
     onLoadLanguage(FLAG_LANGUAGE.flag_language);
     this.preKeys = [];
@@ -133,7 +133,12 @@ class TrendingTab extends Component {
     this.spanTime = spanTime;
   }
   getUrl() {
-    return URL + this.storeName + this.spanTime;
+    console.log(this.storeName);
+    if (this.storeName === 'All') {
+      return URL + this.spanTime;
+    } else {
+      return URL + this.spanTime + '&language=' + this.storeName;
+    }
   }
   componentDidMount() {
     this.loadData(false);
@@ -204,7 +209,9 @@ class TrendingTab extends Component {
   footer() {
     return this._store().hideLoadingMore ? (
       <View style={styles.footerContainer}>
-        <Text style={styles.footText}>----------- No More Data -----------</Text>
+        <Text style={styles.footText}>
+          ----------- No More Data -----------
+        </Text>
       </View>
     ) : (
       <View style={styles.footerContainer}>
@@ -221,7 +228,7 @@ class TrendingTab extends Component {
         <FlatList
           data={store.projectModels}
           renderItem={data => this.renderItem(data)}
-          keyExtractor={item => '' + item.item.fullName}
+          keyExtractor={item => '' + item.item.name}
           showsVerticalScrollIndicator={false}
           refreshControl={
             <RefreshControl
@@ -255,7 +262,6 @@ class TrendingTab extends Component {
   }
 }
 const mapStateToProps = state => {
-  console.log(state);
   return {
     trending: state.trending,
   };

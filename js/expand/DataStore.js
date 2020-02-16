@@ -99,12 +99,15 @@ export default class DataStore {
             reject(error);
           });
       } else {
-        new Trending()
-          .fetchTrending(url)
+        fetch(url)
+          .then(res => {
+            return res.json();
+          })
           .then(items => {
             if (!items) {
               throw new Error('responseData is null');
             }
+            console.log(items);
             this.saveData(url, items);
             resolve(items);
           })

@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
   description: {
     color: '#fff',
     fontSize: 20,
+    textAlign: 'center',
   },
 });
 
@@ -141,11 +142,11 @@ export default class AppInfo extends Component<Props> {
             </View>
             <View style={styles.info}>
               <View level={10}>
-                <Text style={styles.title}>最热项目</Text>
+                <Text style={styles.title}>Trending Project</Text>
               </View>
               <View level={15}>
                 <Text style={styles.description}>
-                  查看每日、每周、每月最热项目
+                View Daily, Weekly, Monthly Trending Project
                 </Text>
               </View>
             </View>
@@ -189,11 +190,11 @@ export default class AppInfo extends Component<Props> {
             </View>
             <View style={styles.info}>
               <View level={10}>
-                <Text style={styles.title}>最流行项目</Text>
+                <Text style={styles.title}>Popular Project</Text>
               </View>
               <View level={15}>
                 <Text style={styles.description}>
-                  查看当前最流行项目，搜索项目添加到主页
+                  View Popular Project, Search Project And Save It To HomePage
                 </Text>
               </View>
             </View>
@@ -250,11 +251,11 @@ export default class AppInfo extends Component<Props> {
             </View>
             <View style={styles.info}>
               <View level={10}>
-                <Text style={styles.title}>收藏项目</Text>
+                <Text style={styles.title}>Favorite Project</Text>
               </View>
               <View level={15}>
                 <Text style={styles.description}>
-                  收藏你喜爱的项目，统一管理
+                  Collect Your Favorite Projects And Manage Them Uniformly
                 </Text>
               </View>
             </View>
@@ -298,10 +299,12 @@ export default class AppInfo extends Component<Props> {
             </View>
             <View style={styles.info}>
               <View level={10}>
-                <Text style={styles.title}>定制主题</Text>
+                <Text style={styles.title}>Custom Theme</Text>
               </View>
               <View level={15}>
-                <Text style={styles.description}>定制你喜爱的颜色主题</Text>
+                <Text style={styles.description}>
+                  Customize Your Favorite Color Theme
+                </Text>
               </View>
             </View>
           </View>

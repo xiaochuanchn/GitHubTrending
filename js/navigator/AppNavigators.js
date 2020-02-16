@@ -16,6 +16,7 @@ import CustomTheme from '../pages/CustomTheme';
 import CustomKeyPage from '../pages/CustomKeyPage';
 import SortKeyPage from '../pages/SortKeyPage';
 import SearchPage from '../pages/SearchPage';
+import CodePush from '../pages/CodePush';
 import AboutPage from '../pages/About/AboutPage';
 import AboutMePage from '../pages/About/AboutMePage';
 const InitNavigator = createStackNavigator({
@@ -77,6 +78,12 @@ const MainNavigator = createStackNavigator({
   },
   SearchPage: {
     screen: SearchPage,
+    navigationOptions: {
+      header: null, // 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
+    },
+  },
+  CodePush: {
+    screen: CodePush,
     navigationOptions: {
       header: null, // 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
     },

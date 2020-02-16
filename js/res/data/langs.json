@@ -1,15 +1,10 @@
 [
   {
     "path": "",
-    "name": "All Language",
+    "name": "All",
     "short_name": "All",
     "checked": true
   },
-  // {
-  //   "path": "unknown",
-  //   "name": "Unknown",
-  //   "checked": true
-  // },
   {
     "path": "as3",
     "name": "ActionScript",

@@ -254,7 +254,7 @@ class SearchPage extends Component<Props> {
           this.saveKey();
         }}>
         <View style={{justifyContent: 'center'}}>
-          <Text style={styles.title}>Save</Text>
+          <Text style={styles.title}>Save It To HomePage</Text>
         </View>
       </TouchableOpacity>
     ) : null;

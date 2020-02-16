@@ -62,7 +62,6 @@ export default class BaseItem extends Component {
 
   _favoriteIcon() {
     const {theme} = this.props;
-    console.log(this.props);
     return (
       <TouchableOpacity
         underlayColor="transparent"

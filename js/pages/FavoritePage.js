@@ -202,7 +202,7 @@ class FavoriteTab extends Component<Props> {
           style={styles.container}
           data={store.projectModels}
           renderItem={data => this.renderItem(data)}
-          keyExtractor={item => '' + (item.item.id || item.item.fullName)}
+          keyExtractor={item => '' + (item.item.id || item.item.name)}
           showsVerticalScrollIndicator={false}
           refreshControl={
             <RefreshControl

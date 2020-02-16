@@ -71,8 +71,6 @@ export function onLoadMoreTrendingData(
         });
       } else {
         //本次和载入的最大数据
-        console.log('更多数据了，请jixu刷星了');
-
         let max =
           pageSize * pageIndex > dataArray.length
             ? dataArray.length
