@@ -12,8 +12,6 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>CodePushDeploymentKey</key>
-	<string>XUD4Hi-e4Tj7wIVvPLsa6shZQEsosOQoQT19Mz</string>
 	<key>CFBundleName</key>
 	<string>Trending For GitHub</string>
 	<key>CFBundlePackageType</key>
@@ -24,6 +22,8 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CodePushDeploymentKey</key>
+	<string>XUD4Hi-e4Tj7wIVvPLsa6shZQEsosOQoQT19Mz</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

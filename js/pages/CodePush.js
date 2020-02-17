@@ -112,7 +112,7 @@ class CodePushPage extends Component {
       this.setState({loading: false});
       console.log(update);
       if (!update) {
-        Alert.alert('你的版本是最新的');
+        Alert.alert('App up to date.');
       } else {
         this.setState({isVisible: true, updateInfo: update});
       }
@@ -145,7 +145,7 @@ class CodePushPage extends Component {
     let progressModalView = (
       <View style={{margin: 10, marginBottom: 30}}>
         <Text style={{fontSize: 16, marginTop: 10, textAlign: 'center'}}>
-          努力更新中，请稍后...
+          Waiting For Installing...
         </Text>
         <Text
           style={{
@@ -169,7 +169,7 @@ class CodePushPage extends Component {
               padding: 10,
               paddingTop: 20,
             }}>
-            检测到更新
+            An update is available
           </Text>
           <Text style={{fontSize: 14, margin: 5, textAlign: 'center'}}>
             Version{this.state.updateInfo.appVersion}
@@ -182,7 +182,7 @@ class CodePushPage extends Component {
               paddingBottom: 0,
               paddingTop: 0,
             }}>
-            更新内容:
+            Description:
           </Text>
           <Text
             style={{
@@ -212,7 +212,7 @@ class CodePushPage extends Component {
             onPress={() => {
               this.setState({isVisible: false});
             }}>
-            <Text>稍后更新</Text>
+            <Text>Ignore</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
@@ -224,7 +224,7 @@ class CodePushPage extends Component {
               this.syncImmediate();
               this.setState({showUpdateView: false, showProgressView: true});
             }}>
-            <Text style={{}}>立即更新</Text>
+            <Text>Install</Text>
           </TouchableOpacity>
         </View>
       </View>
