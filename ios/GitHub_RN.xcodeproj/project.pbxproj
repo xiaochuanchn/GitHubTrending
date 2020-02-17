@@ -35,8 +35,8 @@
 		C166E6EF1DC646BEBFBCBD05 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89CE96136903472FA5442B79 /* AntDesign.ttf */; };
 		CFF950AF5AB04972721532ED /* libPods-GitHub_RN-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A2A5A7CC25916CEAA5A1BA /* libPods-GitHub_RN-tvOS.a */; };
 		E7126F172E3EF06C6A26404D /* libPods-GitHub_RN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A23128640E35708321C4DC /* libPods-GitHub_RN.a */; };
-		E77325BB23F193BC0088E76C /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = E77325B923F193BB0088E76C /* main.jsbundle */; };
-		E77325BC23F193BC0088E76C /* assets in Resources */ = {isa = PBXBuildFile; fileRef = E77325BA23F193BC0088E76C /* assets */; };
+		E7EF0F2123F9995F00A3D645 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = E7EF0F1F23F9995F00A3D645 /* main.jsbundle */; };
+		E7EF0F2223F9995F00A3D645 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = E7EF0F2023F9995F00A3D645 /* assets */; };
 		FDC90B87F77B43F68844F2D2 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1DEBA628DA14686BC8FA106 /* EvilIcons.ttf */; };
 /* End PBXBuildFile section */
 
@@ -102,8 +102,8 @@
 		BEE76E87AA81DF440F317A13 /* Pods-GitHub_RN.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHub_RN.staging.xcconfig"; path = "Target Support Files/Pods-GitHub_RN/Pods-GitHub_RN.staging.xcconfig"; sourceTree = "<group>"; };
 		D1DEBA628DA14686BC8FA106 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		DAE23CC50F4D484EB4FDB140 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		E77325B923F193BB0088E76C /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		E77325BA23F193BC0088E76C /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		E7EF0F1F23F9995F00A3D645 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = ../bundles/main.jsbundle; sourceTree = "<group>"; };
+		E7EF0F2023F9995F00A3D645 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../bundles/assets; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -164,8 +164,8 @@
 		13B07FAE1A68108700A75B9A /* GitHub_RN */ = {
 			isa = PBXGroup;
 			children = (
-				E77325BA23F193BC0088E76C /* assets */,
-				E77325B923F193BB0088E76C /* main.jsbundle */,
+				E7EF0F2023F9995F00A3D645 /* assets */,
+				E7EF0F1F23F9995F00A3D645 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -412,12 +412,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77325BB23F193BC0088E76C /* main.jsbundle in Resources */,
+				E7EF0F2123F9995F00A3D645 /* main.jsbundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				C166E6EF1DC646BEBFBCBD05 /* AntDesign.ttf in Resources */,
 				4FFA7C1309144121A76D1ABA /* Entypo.ttf in Resources */,
-				E77325BC23F193BC0088E76C /* assets in Resources */,
+				E7EF0F2223F9995F00A3D645 /* assets in Resources */,
 				FDC90B87F77B43F68844F2D2 /* EvilIcons.ttf in Resources */,
 				BE2CFF0C0531479E80CD5166 /* Feather.ttf in Resources */,
 				2C71B395B5A24AA0A84F704B /* FontAwesome.ttf in Resources */,

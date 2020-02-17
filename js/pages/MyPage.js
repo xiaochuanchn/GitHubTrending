@@ -56,7 +56,7 @@ class MyPage extends Component<Props> {
         break;
       case MORE_MENU.CodePush:
         RouteName = 'CodePush';
-        params.title = 'Update';
+        params.title = 'Version';
         break;
       case MORE_MENU.Feedback:
         const url = 'mailto://xiaochuanchn@gmail.com';

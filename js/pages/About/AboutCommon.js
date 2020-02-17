@@ -6,6 +6,7 @@ import ParallaxScrollView from 'react-native-parallax-scroll-view';
 import GlobalStyles from '../../res/GlobalStyles';
 import ViewUtil from '../../util/ViewUtil';
 import DeviceInfo from 'react-native-device-info';
+
 export const FLAG_ABOUT = {flag_about: 'about', flag_about_me: 'about_me'};
 import {
   View,
@@ -63,10 +64,6 @@ export default class AboutCommon {
         <Image style={styles.avatar} source={avatar} />
         <Text style={styles.sectionSpeakerText}>{params.name}</Text>
         <Text style={styles.sectionTitleText}>{params.description}</Text>
-        <Text
-          style={
-            styles.versionText
-          }>{`version ${DeviceInfo.getVersion()}`}</Text>
       </View>
     );
     config.renderStickyHeader = () => (
